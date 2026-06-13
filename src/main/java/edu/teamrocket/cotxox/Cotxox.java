@@ -3,6 +3,8 @@ package edu.teamrocket.cotxox;
 import java.util.ArrayList;
 import java.util.List;
 import edu.teamrocket.cotxox.carrera.Carrera;
+import edu.teamrocket.cotxox.tarifa.Tarifa;
+import edu.teamrocket.cotxox.conductor.Conductor;
 
 public class Cotxox {
 
