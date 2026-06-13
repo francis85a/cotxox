@@ -152,6 +152,7 @@ buildNumber.properties
 .settings/
 .vscode/
 .mvn/
+.github/
 
 ######################
 ###### Resources #####
