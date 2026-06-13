@@ -91,7 +91,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>edu.teamrocket.cotxox.App</mainClass>
+              <mainClass>edu.teamrocket.cotxox.Cotxox</mainClass>
             </manifest>
             <manifestEntries>
               <url>${project.url}</url>

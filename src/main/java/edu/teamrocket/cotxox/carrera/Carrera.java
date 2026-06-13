@@ -1,24 +1,23 @@
 package edu.teamrocket.cotxox.carrera;
 
-import edu.teamrocket.cotxox.conductor.Conductor;
+import edu.teamrocket.cotxox.conductor.*;
+import edu.teamrocket.cotxox.tarifa.Tarifa;
 
 public class Carrera {
     private String tarjetaCredito = null;
     private String origen = null;
     private String destino = null;
-    private double distancia = 0;
+    private double distancia = 0d;
     private int tiempoEsperado = 0;
     private int tiempoCarrera = 0;
     private double costeTotal = 0;
     private int propina = 0;
 
-
+    private Conductor conductor = null;
 
     public Carrera(String tarjetaCredito){
         this.tarjetaCredito = tarjetaCredito;
     }
-
-    private Conductor conductor = null;
 
     public String getTarjetaCredito() {
         return this.tarjetaCredito;
@@ -56,7 +55,7 @@ public class Carrera {
     }
 
     public double getCosteEsperado() {
-        return this.distancia;
+        return Tarifa.getCosteTotalEsperado(this);
     }
 
     public void setTiempoCarrera (int tiempoCarrera) {
@@ -98,8 +97,5 @@ public class Carrera {
     public void liberarConductor(){
         getConductor().setOcupado(false);
     }
-
-
-
 
 }
