@@ -20,58 +20,58 @@ public class Carrera {
 
     private Conductor conductor = null;
 
-    String getTarjetaCredito() {
+    public String getTarjetaCredito() {
         return this.tarjetaCredito;
     }
 
-    void setOrigen (String origen) {
+    public void setOrigen (String origen) {
         this.origen = origen;
     }
 
-    String getOrigen() {
+    public String getOrigen() {
         return this.origen;
     }
 
-    void setDestino (String destino) {
+    public void setDestino (String destino) {
         this.destino = destino;
     }
-    String getDestino() {
+    public String getDestino() {
         return this.destino;
     }
 
-    void setDistancia (double distancia) {
+    public void setDistancia (double distancia) {
         this.distancia = distancia;
     }
 
-    double getDistancia() {
+    public double getDistancia() {
         return this.distancia;
     }
 
-    void setTiempoEsperado (int tiempoEsperado) {
+    public void setTiempoEsperado (int tiempoEsperado) {
         this.tiempoEsperado = tiempoEsperado;
     }
 
-    int getTiempoEsperado() {
+    public int getTiempoEsperado() {
         return this.tiempoEsperado;
     }
 
-    double getCosteEsperado() {
+    public double getCosteEsperado() {
         return this.distancia;
     }
 
-    void setTiempoCarrera (int tiempoCarrera) {
+    public void setTiempoCarrera (int tiempoCarrera) {
         this.tiempoCarrera = tiempoCarrera;
     }
 
-    int getTiempoCarrera() {
+    public int getTiempoCarrera() {
         return this.tiempoCarrera;
     }
 
-    void setConductor (Conductor conductor) {
+    public void setConductor (Conductor conductor) {
         this.conductor = conductor;
     }
 
-    Conductor getConductor() {
+    public Conductor getConductor() {
         return this.conductor;
     }
 
@@ -83,7 +83,7 @@ public class Carrera {
         this.costeTotal = pago;
     }
 
-    double getCosteTotal(){
+    public double getCosteTotal(){
         return this.costeTotal;
     }
 
@@ -91,7 +91,7 @@ public class Carrera {
         this.propina = propina;
     }
 
-    int getPropina(){
+    public int getPropina(){
         return this.propina;
     }
 
